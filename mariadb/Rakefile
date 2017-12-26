@@ -1,0 +1,5 @@
+require_relative '../config/boboot'
+Boboot.require_boot!
+
+require_relative 'mariadb'
+DevkitTask::MariaDB.new.define!

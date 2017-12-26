@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+cabling do |cabler, cablefile, target|
+  cabler.group = 'devkit'
+
+  setup :template, 'devkit.yml'
+  setup :dotenv
+end
